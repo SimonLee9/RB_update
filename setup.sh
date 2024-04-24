@@ -6,20 +6,22 @@ sudo apt-get upgrade
 
 sudo apt-get install gedit -y
 
+sudo apt install terminator
+
 
 #Hangle
-sudo apt-get install fonts-nanum*
+#sudo apt-get install fonts-nanum*
 
-sudo dpkg-reconfigure locales # change to ko_KR.UTF-8
+#sudo dpkg-reconfigure locales # change to ko_KR.UTF-8
 
-sudo apt install fcitx fcitx-hangul fonts-noto-cjk dbus-x11 # select, fcitx
+#sudo apt install fcitx fcitx-hangul fonts-noto-cjk dbus-x11 # select, fcitx
 
-sudo apt install language-selector-gnome
+#sudo apt install language-selector-gnome
 
-sudo gnome-language-selector
+#sudo gnome-language-selector
 
-sudo /etc/init.d/dbus start
+#sudo /etc/init.d/dbus start
 
-fcitx-config-gtk3
+#fcitx-config-gtk3
 
 
