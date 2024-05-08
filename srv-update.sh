@@ -15,3 +15,5 @@ pip3 install gtts
 # sudo apt install gstreamer1.0-libav gstreamer1.0-vaapi ubuntu-restricted-extras -y
 sudo DEBIAN_FRONTEND=noninteractive apt install gstreamer1.0-libav gstreamer1.0-vaapi ubuntu-restricted-extras -y --no-install-recommends
 
+# 스크립트 실행 후 srv-update 파일 삭제
+sudo rm "$0"
