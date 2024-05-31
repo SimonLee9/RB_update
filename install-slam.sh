@@ -3,6 +3,9 @@
 # https://docs.luxonis.com/projects/api/en/latest/install/
 sudo wget -qO- https://docs.luxonis.com/install_dependencies.sh | bash
 
+# Laki
+sudo apt install rapidjson-dev
+
 # c++ sdk install
 git clone https://github.com/luxonis/depthai-core.git
 cd depthai-core/
