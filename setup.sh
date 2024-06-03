@@ -8,6 +8,8 @@ sudo apt-get install gedit -y
 
 sudo apt install terminator
 
+sudo apt install net-tools
+
 
 #Hangle
 #sudo apt-get install fonts-nanum*
