@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# startextproc.sh 프로세스 종료
-#pid=$(ps -ef | grep "startextproc.sh" | grep -v 'grep' | awk '{print $2}')
-#if [ -z "$pid" ]; then
-#    echo "startextproc.sh is not running"
-#else
-#    kill -9 $pid
-#fi
-
 # startslam.sh 프로세스 종료
 pid=$(ps -ef | grep "startslam.sh" | grep -v 'grep' | awk '{print $2}')
 if [ -z "$pid" ]; then
