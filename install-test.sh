@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # startextproc.sh 프로세스 종료
-pid=$(ps -ef | grep "startextproc.sh" | grep -v 'grep' | awk '{print $2}')
-if [ -z "$pid" ]; then
-    echo "startextproc.sh is not running"
-else
-    kill -9 $pid
-fi
+#pid=$(ps -ef | grep "startextproc.sh" | grep -v 'grep' | awk '{print $2}')
+#if [ -z "$pid" ]; then
+#    echo "startextproc.sh is not running"
+#else
+#    kill -9 $pid
+#fi
 
 # startslam.sh 프로세스 종료
 pid=$(ps -ef | grep "startslam.sh" | grep -v 'grep' | awk '{print $2}')
@@ -28,7 +28,7 @@ fi
 cd ~/RB_MOBILE/release
 
 # srv-update 파일 실행 여부 확인
-if [ -f "./srv-update" ]; then
+if [ -f "./update_srv_remove" ]; then
     echo "Running srv-update..."
     ./srv-update
 else

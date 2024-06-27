@@ -23,3 +23,8 @@ sudo apt install libopencv-contrib-dev -y
 
 sudo apt install libboost-all-dev -y
 
+# 팀뷰어 설치 파일을 Home 경로에 다운로드
+wget -P ~/ https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+
+# 다운로드한 설치 파일을 이용하여 팀뷰어 설치
+sudo apt install ~/teamviewer_amd64.deb -y
