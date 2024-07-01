@@ -20,6 +20,6 @@ git checkout master
 git pull
 
 # 8. 파일 실행
-./update_srv_remove.sh
+sudo ./update_srv_remove.sh
 echo "모든 작업이 완료되었습니다."
 
