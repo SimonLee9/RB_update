@@ -25,13 +25,13 @@ sudo apt install ~/teamviewer_arm64.deb -y
 
 # autostart.sh 파일 교체
 #cp ~/RB_MOBILE/sh/autostart.sh ~/RB_MOBILE/release/autostart.sh
-mv ~/RB_MOBILE/release/autostart.sh ~/RB_MOBILE/sh/autostart.sh
+sudo mv ~/RB_MOBILE/release/autostart.sh ~/RB_MOBILE/sh/autostart.sh
 
 # release 경로에 있는 autostart.sh 파일 삭제
-rm ~/RB_MOBILE/release/autostart.sh
+sudo rm ~/RB_MOBILE/release/autostart.sh
 
 # sh 폴더에 있는 autostart.sh 파일에 실행 권한 부여
-chmod +x ~/RB_MOBILE/sh/autostart.sh
+sudo chmod +x ~/RB_MOBILE/sh/autostart.sh
 
 echo "모든 작업이 완료되었습니다."
 
