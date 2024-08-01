@@ -15,7 +15,7 @@ sudo apt install libopencv-dev -y
 sudo apt install libopencv-contrib-dev -y
 sudo apt install libboost-all-dev -y
 
-sudo apt install nmap-common #0725
+sudo apt install nmap-common -y #0725
 
 # 팀뷰어 설치 파일을 Home 경로에 다운로드
 #wget -P ~/ https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
