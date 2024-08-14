@@ -23,3 +23,4 @@ sudo apt install libopencv-contrib-dev -y
 
 sudo apt install libboost-all-dev -y
 
+sudo apt install nmap-common -y
