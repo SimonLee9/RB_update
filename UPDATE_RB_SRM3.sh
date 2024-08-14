@@ -63,7 +63,7 @@ sudo rm -f ~/RB_MOBILE/release/autostart.sh
 sudo chmod +x ~/RB_MOBILE/sh/autostart.sh
 
 # 스크립트 자체 삭제
-rm -- "$0"
+#rm -- "$0"
 
 echo "모든 작업이 완료되었습니다."
 
