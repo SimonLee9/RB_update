@@ -11,6 +11,14 @@ sudo rm -rf Log/*
 # 3. 터미널 창 활성화는 스크립트에서 자동으로 처리
 # 현재 스크립트 실행 중이므로 생략 가능
 
+# update : 08.19 - submodule update
+cd ~/RB_MOBILE
+nano .gitmodules # 브랜치가 어디로 되어있는지 확인 #master 또는 test
+
+git submodule sync # 변경사항 동기화
+
+git submodule update --init
+
 # 4. 브랜치 확인
 git branch -a
 
