@@ -13,9 +13,18 @@ sudo rm -rf Log/*
 
 # update : 08.19 - submodule update
 cd ~/RB_MOBILE
-nano .gitmodules # 브랜치가 어디로 되어있는지 확인 #master 또는 test
+
+# nano .gitmodules # 브랜치가 어디로 되어있는지 확인 #master 또는 test
+
+# .gitmodules 파일에 branch = master 추가
+# 이미 존재하는 경우 중복 추가되지 않도록 체크
+if ! grep -q 'branch = master' .gitmodules; then
+    sed -i '/\[submodule "release"\]/a \    branch = master' .gitmodules
+fi
 
 git submodule sync # 변경사항 동기화
+
+# rm OrbbecSDKConfig_v1.0.xml # 추적되지 않은 파일 제거
 
 git submodule update --init
 
