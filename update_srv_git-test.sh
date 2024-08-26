@@ -39,10 +39,22 @@ git checkout master
 
 # 7. 업데이트 진행
 git pull
-
-# 만일 업데이트가 안되면
-git fetch origin
-git reset --hard origin/<branch-name>
+if [ $? -eq 0 ]; then
+    echo "Update successful."
+else
+    echo "git pull failed, attempting to resolve..."
+    git fetch origin
+    git reset --hard origin/master
+    
+    # 강제로 원격 브랜치와 동기화 후 다시 pull 시도
+    git pull
+    if [ $? -eq 0 ]; then
+        echo "Update successful after reset."
+    else
+        echo "Second attempt to update failed. Please check your network connection or repository status."
+        exit 1
+    fi
+fi
 
 # 8. 파일 실행
 #sudo chomd +x update_srv_remove.sh
