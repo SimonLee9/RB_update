@@ -18,15 +18,15 @@ cd ~/RB_MOBILE
 
 # .gitmodules 파일에 branch = master 추가
 # 이미 존재하는 경우 중복 추가되지 않도록 체크
-if ! grep -q 'branch = master' .gitmodules; then
-    sed -i '/\[submodule "release"\]/a \    branch = master' .gitmodules
-fi
+#if ! grep -q 'branch = master' .gitmodules; then
+#    sed -i '/\[submodule "release"\]/a \    branch = master' .gitmodules
+#fi
 
-git submodule sync # 변경사항 동기화
+#git submodule sync # 변경사항 동기화
 
 # rm OrbbecSDKConfig_v1.0.xml # 추적되지 않은 파일 제거
 
-git submodule update --init
+#git submodule update --init
 
 # 4. 브랜치 확인
 git branch -a
@@ -41,8 +41,8 @@ git checkout master
 git pull
 
 # 만일 업데이트가 안되면
-git fetch origin
-git reset --hard origin/<branch-name>
+#git fetch origin
+#git reset --hard origin/<branch-name>
 
 # 8. 파일 실행
 #sudo chomd +x update_srv_remove.sh
@@ -67,12 +67,12 @@ sudo apt install libboost-all-dev -y
 sudo apt install nmap-common -y #0725
 
 # 팀뷰어 설치 파일을 Home 경로에 다운로드
-#wget -P ~/ https://download.teamviewer.com/download/linux/teamviewer-host_arm64.deb
+wget -P ~/ https://download.teamviewer.com/download/linux/teamviewer-host_arm64.deb
 
 
 # 다운로드한 설치 파일을 이용하여 팀뷰어 설치
 
-#sudo apt install ~/teamviewer-host_arm64.deb -y
+sudo apt install ~/teamviewer-host_arm64.deb -y
 
 # autostart.sh 파일 교체
 #cp ~/RB_MOBILE/sh/autostart.sh ~/RB_MOBILE/release/autostart.sh
