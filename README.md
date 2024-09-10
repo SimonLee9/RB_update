@@ -5,7 +5,7 @@
 https://github.com/RBmobile23/mobile_slamnav2D
 
 # Map_editor
-### mobile_slamnav2D
+### mobile_slamnav2D_map_editor
 https://github.com/RBmobile23/mobile_slamnav2D_map_editor
 
 # FMS
