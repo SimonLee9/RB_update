@@ -1,6 +1,7 @@
 # RB_update
 ### update_srv.sh
 
+### update_ultra.sh
 만일 울트라에서 mobile_slamnav2D/UI_MOBILE_TEMP를 사용한다면, update_ultra.sh 파일 설치 후 빌드 실행
 
 # SlamNavi
